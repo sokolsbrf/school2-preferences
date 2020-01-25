@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <Preference
+        app:key="@string/prefs_first_key"
+        app:title="@string/pref_first_title"
+        app:summary="@string/pref_first_summary"
+        />
+
+    <Preference
+        app:key="@string/pref_feedback_key"
+        app:title="@string/pref_feedback_title"
+        app:summary="@string/pref_feedback_summary"
+        />
+
+    <PreferenceCategory
+        app:title="Notifications">
+
+        <SwitchPreference
+            app:key="@string/pref_notifications_key"
+            app:title="@string/pref_notifications_title"
+            app:defaultValue="true"
+            app:summaryOn="@string/pref_notifications_summary_enabled"
+            app:summaryOff="@string/pref_notifications_summary_disabled"
+            app:icon="@drawable/ic_notifications_black_24dp"
+            />
+
+        <ListPreference
+            app:key="@string/pref_severity_key"
+            app:title="@string/pref_severity_title"
+            app:entries="@array/pref_summary_values"
+            app:entryValues="@array/pref_severity_values_data"
+            app:defaultValue="@string/pref_severity_default_value"
+            app:dependency="@string/pref_notifications_key"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        app:key="@string/pref_ui_screen_key"
+        app:title="@string/pref_ui_screen_title">
+
+        <EditTextPreference
+            app:key="@string/pref_welcome_key"
+            app:title="@string/pref_welcome_title"
+            app:defaultValue="@string/pref_welcome_default_value"
+            />
+
+    </PreferenceScreen>
+
+</PreferenceScreen>

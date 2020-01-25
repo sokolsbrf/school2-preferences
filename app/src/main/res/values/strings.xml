@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TestPreferences</string>
+    <string name="button_preferences">Preferences</string>
+
+    <string name="pref_first_title">Demo Preference</string>
+    <string name="pref_first_summary">Open toast</string>
+    <string name="pref_feedback_title">Send feedback</string>
+    <string name="pref_feedback_summary">Say anything</string>
+
+    <string name="pref_notifications_title">Enable</string>
+    <string name="pref_notifications_summary_enabled">Notifications is currently enabled</string>
+    <string name="pref_notifications_summary_disabled">Notifications is currently disabled</string>
+
+    <string name="pref_severity_title">Severity</string>
+    <string name="pref_ui_screen_title">UI settings</string>
+
+    <string name="pref_welcome_title">Welcome message</string>
+    <string name="pref_welcome_default_value">Hello, user!</string>
+
+    <string-array name="pref_summary_values">
+        <item>High</item>
+        <item>Low</item>
+    </string-array>
+</resources>
